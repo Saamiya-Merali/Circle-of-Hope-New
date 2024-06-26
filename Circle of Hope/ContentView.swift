@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
+            
+            
             Text("Circle of Hope")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
@@ -18,10 +20,11 @@ struct ContentView: View {
                 NavigationLink(destination: QuizQuestionOne()) {
                     Text("Interest")
                 }
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                NavigationLink(destination: CharityPage()) {
+                    Text("Cancer Research")
                 }
             }
+            
         }
     }
 }
