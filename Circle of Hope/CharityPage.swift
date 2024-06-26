@@ -9,18 +9,12 @@ import SwiftUI
 struct CharityPage: View {
     var body: some View {
         NavigationStack {
-            
+            NavigationLink(destination: CancerResearch()) {
+                Text("Cancer Research")
+            }
+        .foregroundColor(.green)
+}
 
-    NavigationLink(destination: Cancer_Research ())
-    .foregroundColor(.green)) {
-    Text("Click Me! ")
-}
-}
-    .navigationTitle("Home")
-.navigationBarTitleDisplayMode(.inline)
-.navigationBarHidden(true)
-}
-}
 }
 }
 

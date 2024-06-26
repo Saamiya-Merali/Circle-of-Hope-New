@@ -11,20 +11,21 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             
-            
             Text("Circle of Hope")
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .foregroundColor(Color.blue)
             VStack {
                 NavigationLink(destination: QuizQuestionOne()) {
-                    Text("Interest")
+                    Text("Interest Quiz")
                 }
                 NavigationLink(destination: CharityPage()) {
-                    Text("Cancer Research")
+                    Text("Charity Library")
                 }
             }
-            
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
     }
 }
