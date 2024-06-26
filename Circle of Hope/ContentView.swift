@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello team 5! welcome to new project")
-            Text("Isabella was here")
+        NavigationStack {
+            Text("Circle of Hope")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(Color.blue)
+            VStack {
+                NavigationLink(destination: QuizQuestionOne()) {
+                    Text("Interest")
+                }
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                }
+            }
         }
-        .padding()
     }
 }
 

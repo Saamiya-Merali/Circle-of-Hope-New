@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F389DD3D2C2C5A7100C2DF20 /* QuizQuestionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389DD3C2C2C5A7100C2DF20 /* QuizQuestionOne.swift */; };
+		F389DD3F2C2C5ACE00C2DF20 /* CharityPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F389DD3E2C2C5ACE00C2DF20 /* CharityPage.swift */; };
 		F39E37AF2C29F40B009792B2 /* Circle_of_HopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E37AE2C29F40B009792B2 /* Circle_of_HopeApp.swift */; };
 		F39E37B12C29F40B009792B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39E37B02C29F40B009792B2 /* ContentView.swift */; };
 		F39E37B32C29F40E009792B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39E37B22C29F40E009792B2 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F389DD3C2C2C5A7100C2DF20 /* QuizQuestionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionOne.swift; sourceTree = "<group>"; };
+		F389DD3E2C2C5ACE00C2DF20 /* CharityPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityPage.swift; sourceTree = "<group>"; };
 		F39E37AB2C29F40B009792B2 /* Circle of Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle of Hope.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39E37AE2C29F40B009792B2 /* Circle_of_HopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle_of_HopeApp.swift; sourceTree = "<group>"; };
 		F39E37B02C29F40B009792B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				F39E37AE2C29F40B009792B2 /* Circle_of_HopeApp.swift */,
 				F39E37B02C29F40B009792B2 /* ContentView.swift */,
+				F389DD3E2C2C5ACE00C2DF20 /* CharityPage.swift */,
+				F389DD3C2C2C5A7100C2DF20 /* QuizQuestionOne.swift */,
 				F39E37B22C29F40E009792B2 /* Assets.xcassets */,
 				F39E37B42C29F40E009792B2 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39E37B12C29F40B009792B2 /* ContentView.swift in Sources */,
+				F389DD3F2C2C5ACE00C2DF20 /* CharityPage.swift in Sources */,
 				F39E37AF2C29F40B009792B2 /* Circle_of_HopeApp.swift in Sources */,
+				F389DD3D2C2C5A7100C2DF20 /* QuizQuestionOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
