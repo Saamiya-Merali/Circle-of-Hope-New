@@ -18,21 +18,35 @@ struct QuizQuestionOne: View {
             NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Your education")
                     .foregroundColor(Color.blue)
-                    .padding(.bottom)/*@END_MENU_TOKEN@*/
+                    /*@END_MENU_TOKEN@*/
+                    .padding(.all)
+                    .background(Color.white)
+                    .cornerRadius(50)
+                    .border(Color.black)
             }
             NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                 Text("Your home")
                     .foregroundColor(Color.blue)
+                    .padding(.all)
+                    .background(Color.white)
+                    .cornerRadius(50)
+                    .border(Color.black)
             }
-            .padding(.bottom)
             NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                 Text("Your family")
                     .foregroundColor(Color.blue)
-                    .padding(.bottom)
+                    .padding(.all)
+                    .background(Color.white)
+                    .cornerRadius(50)
+                    .border(Color.black)
             }
             NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                 Text("Your pet")
                     .foregroundColor(Color.blue)
+                    .padding(.all)
+                    .background(Color.white)
+                    .cornerRadius(50)
+                    .border(Color.black)
             }
         .padding(.bottom)
         NavigationLink(destination: QuizQuestionTwo()) {

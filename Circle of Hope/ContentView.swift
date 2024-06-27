@@ -8,24 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
+        
         NavigationStack {
-            Image("Screenshot 2024-06-26 at 2.20.40 PM")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                .padding(.horizontal)
-            Text("")
-            VStack {
-                NavigationLink(destination: QuizQuestionOne()) {
-                    Text("Interest Quiz")
+            
+            ZStack {
+               LinearGradient(gradient: Gradient(colors: [.purple, .white]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Image("0C743053-BB17-4D73-B3DE-9B2AE66E1086")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(.horizontal)
+                            .padding(.bottom, 30)
+
+                    NavigationLink(destination: QuizQuestionOne()) {
+                        Text("Interest Quiz")
+                            .font(.title)
+                            .foregroundColor(Color.gray)
+                            .padding(.all)
+                            .background(Color.white)
+                            .cornerRadius(50)
+                            
+                    }
+                    Image("C6EDC371-D484-4285-8A05-6A6DCB7D69F9")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120, height: 120)
+        
+                    NavigationLink(destination: CharityPage()) {
+                        Text("Charity Library")
+                            .font(.title)
+                            .foregroundColor(Color.gray)
+                            .padding(.all)
+                            .background(Color.white)
+                            .cornerRadius(50)
+                    }
                 }
-                NavigationLink(destination: CharityPage()) {
-                    Text("Charity Library")
-                }
+                .navigationTitle("Home")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
             }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
         }
     }
 }
