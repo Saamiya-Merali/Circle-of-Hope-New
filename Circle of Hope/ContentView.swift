@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            
-            Text("Circle of Hope")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundColor(Color.blue)
+            Image("Screenshot 2024-06-26 at 2.20.40 PM")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(.horizontal)
+            Text("")
             VStack {
                 NavigationLink(destination: QuizQuestionOne()) {
                     Text("Interest Quiz")
