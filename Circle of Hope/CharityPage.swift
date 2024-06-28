@@ -22,7 +22,6 @@ struct CharityPage: View {
                         Spacer()
                     }
                     .padding(.top, 50)
-                    Spacer()
                     Text("Charity Donations")
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -47,6 +46,32 @@ struct CharityPage: View {
                             .background(Color.orange)
                             .cornerRadius(10)
                     }
+                    NavigationLink(destination: DonationView(description: "The environment has been greatly affected by human activities. Deforestation, the burning of fossil fuels, and habitat destruction are just a few examples of the effects that we humans have had on Earth. We are hurting our one and only home. But, individuals have stood up to fight the destruction that inevitably follows what factories, corporations, and even regular people do without a second thought. Together, let’s build a beautiful world that future generations will be able to live in and enjoy.", cause: "Enviroment")) {
+                        FancyText("Enviroment")
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink(destination: DonationView(description: "Education is extremely important in our society; it helps people secure a higher income and develop problem solving skills. Charities for this cause not only help with the cost of schooling (tuition, books, transportation and more), but provide extra support through additional learning opportunities, guidance and accountability. Everyone deserves to have the opportunity to have an education so that they can properly engage with society and their personal interests.", cause: "Education")) {
+                        FancyText("Education")
+                            .background(Color.yellow)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink(destination: DonationView(description: "The most recent conflict that has caused great distress has been that between Israel and Gaza, as it has severely damaged the latter. Charities for conflict between countries aim to address urgent humanitarian needs and support long term recovery efforts. The funds raised will usually primarily focus on immediate relief, including providing essential medical supplies, food, medical treatment, clean water, and other necessities for families affected by the conflict. Additionally, they will support rebuilding healthcare facilities and mental health support in order to foster healing and resilience in the affected communities.", cause: "Damage from Conflict")) {
+                        FancyText("Damage from Conflict")
+                            .background(Color.red)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink(destination: DonationView(description: "By fighting cruelty, rescuing and securing adoptions for animals in need, and driving significant legislative change that protects their lives and welfare—organizations can ultimately transform how people value and care for animals. The modern challenges facing animals are wide-ranging and complex, but we can combat them by providing vital veterinary care, responding to disasters, pioneering adoption/behavioral rehabilitation programs, conducting critical animal welfare research, training law enforcement and shelter professionals, and advocating for more effective laws.", cause: "Ending Animal Abuse")) {
+                        FancyText("Ending Animal Abuse")
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink(destination: DonationView(description: "Mobilize. Educate. Advocate. These are the three pillars that most charities who strive for equality for all follow. Marginalized groups such as people of color and the LGBTQIA+ need support in order to breach this gap that has been established in our society. We need to call attention to the most urgent opportunities for change--and make that change a reality. We should be focused on fighting for the liberation of all our people without any exception and without leaving anyone behind.", cause: "Equality for All")) {
+                        FancyText("Equality for All")
+                            .background(Color.green)
+                            .cornerRadius(10)
+                    }
+                    
                     Spacer()
                 }
                 .padding()

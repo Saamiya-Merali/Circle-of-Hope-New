@@ -8,33 +8,43 @@
 import SwiftUI
 
 struct QuizQuestionThree: View {
-        
+
+@State private var message = "You should consider donating to..."
+    
     var body: some View {
         VStack {
             Text("If you were the president/leader of your country, which of these would you most want to increase the funding of?")
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .padding([.leading, .bottom, .trailing])
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Hospitals")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)/*@END_MENU_TOKEN@*/
+            Button("Hospitals") {
+                message = "You should consider donating to: Cancer Research and Damage from Conflict"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Shelters")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Shelters") {
+                message = "You should consider donating to: Homeless People and Ending Animal Abuse"
             }
-            .padding(.bottom)
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Green Energy")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Green Energy") {
+                message = "You should consider donating to: Enviroment"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Schools")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Schools") {
+                message = "You should consider donating to: Education"
             }
-        .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            
+            Text(message)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
         NavigationLink(destination: QuizQuestionFour()) {
             Text("Next Question →")
                 .foregroundColor(Color.blue)

@@ -8,33 +8,43 @@
 import SwiftUI
 
 struct QuizQuestionTwo: View {
-        
+
+@State private var message = "You should consider donating to..."
+    
     var body: some View {
         VStack {
             Text("Which of these scenarios sounds the most worrying for you to go through?")
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Being imprisioned or trapped somewhere")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)/*@END_MENU_TOKEN@*/
+            Button("Living in a world where our factories and buildings have overtaken the natural world") {
+                message = "You should consider donating to: Enviroment"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Living in a world where our factories and buildings have overtaken the natural world")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Feeling/being imprisioned or trapped somewhere") {
+                message = "You should consider donating to: Financially Needy People and Damage from Conflict"
             }
-            .padding(.bottom)
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("The illness or death of someone you know")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Living in a world where we've forgotten how to express ourselves") {
+                message = "You should consider donating to: Equality for All"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Living in a world where we've forgotten how to express ourselves")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("The illness or death of someone you know") {
+                message = "You should consider donating to: Cancer Research and Damage from Conflict"
             }
-        .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            
+            Text(message)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
         NavigationLink(destination: QuizQuestionThree()) {
             Text("Next Question →")
                 .foregroundColor(Color.blue)

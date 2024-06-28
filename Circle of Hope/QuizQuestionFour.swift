@@ -8,35 +8,45 @@
 import SwiftUI
 
 struct QuizQuestionFour: View {
-        
+
+@State private var message = "You should consider donating to..."
+    
     var body: some View {
         VStack {
-            Text("Which of these quotes would you agree with the most?")
+            Text("Which of these quotes do you agree with the most?")
                 .font(.title)
                 .multilineTextAlignment(.center)
-                .padding([.leading, .bottom, .trailing])
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("'Where you live should not determine whether you live, or whether you die.'")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)/*@END_MENU_TOKEN@*/
+                .padding(.bottom)
+            Button("'Where you live should not determine whether you live, or whether you die.'") {
+                message = "You should consider donating to: Damage from Conflict"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("'The more helpless a creature, the more entitled it is to the protection by man.'")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("'The more helpless a creature, the more entitled it is to the protection by man.'") {
+                message = "You should consider donating to: Homeless People, Ending Animal Abuse, and Finacially Needy People"
             }
-            .padding(.bottom)
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("'A nation that destroys its soils destroys itself.'")
-                    .foregroundColor(Color.blue)
-                    .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("'A nation that destroys its soils destroys itself.'") {
+                message = "You should consider donating to: Enviroment"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("'Even if people are very young, they shouldn't be prevented from saying what they think.'")
-                    .foregroundColor(Color.blue)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("'Even if people are very young, they shouldn't be prevented from saying what they think.'") {
+                message = "You should consider donating to: Equality for All"
             }
-        .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            
+            Text(message)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
         NavigationLink(destination: ContentView()) {
-            Text("← Back to home")
+            Text("← Back to Home")
                 .foregroundColor(Color.blue)
                 .padding(.top)
         }

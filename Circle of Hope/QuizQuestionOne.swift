@@ -8,47 +8,43 @@
 import SwiftUI
 
 struct QuizQuestionOne: View {
-        
+
+@State private var message = "You should consider donating to..."
+    
     var body: some View {
         VStack {
             Text("Which of these things do you worry about the most?")
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Your education")
-                    .foregroundColor(Color.blue)
-                    /*@END_MENU_TOKEN@*/
-                    .padding(.all)
-                    .background(Color.white)
-                    .cornerRadius(50)
-                    .border(Color.black)
+            Button("Your education") {
+                message = "You should consider donating to: Education"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Your home")
-                    .foregroundColor(Color.blue)
-                    .padding(.all)
-                    .background(Color.white)
-                    .cornerRadius(50)
-                    .border(Color.black)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Your home") {
+                message = "You should consider donating to: Homeless People and Damage from Conflict"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Your family")
-                    .foregroundColor(Color.blue)
-                    .padding(.all)
-                    .background(Color.white)
-                    .cornerRadius(50)
-                    .border(Color.black)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Your pet") {
+                message = "You should consider donating to: Ending Animal Abuse"
             }
-            NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                Text("Your pet")
-                    .foregroundColor(Color.blue)
-                    .padding(.all)
-                    .background(Color.white)
-                    .cornerRadius(50)
-                    .border(Color.black)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            Button("Your family") {
+                message = "You should consider donating to: Orphans and Cancer Research"
             }
-        .padding(.bottom)
+            .padding(.all)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            
+            Text(message)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
         NavigationLink(destination: QuizQuestionTwo()) {
             Text("Next Question →")
                 .foregroundColor(Color.blue)
