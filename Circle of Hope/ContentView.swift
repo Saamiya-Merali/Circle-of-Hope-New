@@ -17,11 +17,13 @@ struct ContentView: View {
                LinearGradient(gradient: Gradient(colors: [.purple, .white]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Image("0C743053-BB17-4D73-B3DE-9B2AE66E1086")
+                    Image("Screenshot 2024-06-28 at 9.24.13 AM 1-Photoroom 1")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding(.horizontal)
-                            .padding(.bottom, 30)
+                            .padding(.bottom, 40)
+                            .frame(width: 300, height: 300)
+                        //    Spacer(minLength: 2)
 
                     NavigationLink(destination: QuizQuestionOne()) {
                         Text("Interest Quiz")

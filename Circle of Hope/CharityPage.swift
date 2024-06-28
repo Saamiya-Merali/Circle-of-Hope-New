@@ -111,7 +111,7 @@ struct DonationView: View {
                 .foregroundColor(.black)
                 .padding()
                 .multilineTextAlignment(.center)
-            TextField("Enter donation amount", text: $donationAmount)
+            TextField(" $ Enter donation amount", text: $donationAmount)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .keyboardType(.decimalPad)
